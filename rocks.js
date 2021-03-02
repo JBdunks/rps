@@ -50,7 +50,7 @@ const start = ()=>{
     document.getElementById('paper').disabled = false;
     document.getElementById('scissors').disabled = false;
     game = prompt('How many games would you like to play?');
-     if((/\D/g).test(game)){
+     if((/\D/g).test(game) || game == 0){
          alert('Not a valid number.');
          location.reload();
      };
