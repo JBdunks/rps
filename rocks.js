@@ -61,15 +61,15 @@ const start = ()=>{
 const counter = () =>{
     count++
     if(count == game && user_total > computer_total){
-        alert(`Congragulations!! You managed to defeat the computer ${user_total} to ${computer_total}.`);
+        alert(`Congratulations!! You managed to defeat the computer ${user_total} to ${computer_total}.`);
         location.reload();
     };
     if(count == game && user_total < computer_total){
-        alert(`You were deafted by the computer ${computer_total} to ${user_total}.  Better luck next time.`);
+        alert(`You were defeated by the computer ${computer_total} to ${user_total}.  Better luck next time.`);
         location.reload();
     };
     if(count == game && user_total == computer_total){
-        alert(`The game ended in a tie.`);
+        alert(`The game has ended in a tie.`);
         location.reload();
     };
 };
